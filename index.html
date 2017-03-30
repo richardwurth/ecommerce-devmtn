@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body ng-controller='mainCtrl'>
+  <div id="master">
+    <div id="top"></div>
+    <div id="main">
+      <div id="left"></div>
+      <div id="right">
+        <div class="topThree" id="one">
+          <h1>{{titleOne}}</h1>
+          <h2><span style="text-decoration: line-through;">${{oldPriceOne}}</span> NOW ${{priceOne}}</h2>
+          <img ng-src="{{imageOne}}" alt="">
+        </div>
+        <div class="topThree" id="two">
+          <h1>{{titleTwo}}</h1>
+          <h2><span style="text-decoration: line-through;">${{oldPriceTwo}}</span> NOW ${{priceTwo}}</h2>
+          <img ng-src="{{imageTwo}}" alt="">
+        </div>
+        <div class="topThree" id="three">
+          <h1>{{titleThree}}</h1>
+          <h2><span style="text-decoration: line-through;">${{oldPriceThree}}</span> NOW ${{priceThree}}</h2>
+          <img ng-src="{{imageThree}}" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Below are the scripts for Jquery, Angular and Javascript Files -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="app.js"></script>
+  <script src="mainCtrl.js"></script>
+  <script src="key.js">
+
+  </script>
+
+  <!-- Above are the scripts for Jquery, Angular and Javascript Files -->
+</body>
+</html>
